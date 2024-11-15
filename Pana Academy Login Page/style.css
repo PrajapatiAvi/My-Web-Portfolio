@@ -1,0 +1,248 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Host Grotesk", sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(220,220,220);
+}
+
+.main-bdy{
+    height: 90%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 1px 1px 30px black;
+}
+
+.main-content{
+    height: 100%;
+    width: 50%;
+    padding-left: 8%;
+    margin-right: 2%;
+}
+
+.logo{
+    height: 100%;
+    width: 50%;
+    background-color: rgb(220,220,220);
+}
+
+.nav-links{
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links a{
+    padding: 0 4%;
+    color: rgba(0,0,0,0.7);
+    text-decoration: 2px underline rgb(220,220,220);
+}
+
+.nav-links a:hover{
+    text-decoration: 2px underline #59cccc;
+    transition: 1s;
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+}
+
+.image img{
+    width: 80%;
+}
+
+.company-name{
+    height: 20%;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    color: #59cccc;
+}
+
+.form{
+    position: relative;
+    top: 5%;
+    height: 60%;
+}
+
+.btn-social{
+    height: 20%;
+}
+
+.form h1{
+    font-size: 25px;
+    color: #59cccc;
+}
+
+.form p{
+    font-size: 12px;
+    color: rgb(120,120,120);
+}
+
+.option{
+    margin: 5% 0;
+}
+
+#wlcm{
+    margin: 5% 0;
+}
+
+.txt-fld{
+    font-size: 12px;
+    margin: auto;
+    /* border: 1px solid rgb(120,120,120); */
+}
+
+.fld{
+    height: 50px;
+    border: 1px solid rgba(120,120,120,0.5);
+    padding: 3px 10px;
+}
+
+.txt{
+    height: 70%;
+    width: 100%;
+    border: transparent;
+    color: rgb(120,120,120);
+    outline: none;
+}
+
+.fld:hover{
+    border-left: 3px solid #59cccc;
+}
+
+.btn-social{
+    position: relative;
+    bottom: 30px;
+    width: 100%;
+    display: inline-block;
+    align-items: center;
+    height: 20%;
+    /* border: 2px solid red; */
+}
+
+button{
+    font-size: 12px;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    padding: 4% 10%;
+}
+
+#btn1{
+    background-color: #59cccc;
+    color: white;
+    border: none;
+}
+
+#btn2{
+    background-color: transparent;
+    border: 1px solid #59cccc;
+    color: rgb(120,120,120);
+}
+
+span{
+    display: flex;
+    justify-content: space-between;
+}
+
+span a, p{
+    font-size: 12px;
+    color: rgb(120,120,120)
+}
+
+span a{
+    font-weight: 600;
+    text-decoration: none;
+    color: blue;
+}
+
+@media (max-width:600px){
+    .main-bdy{
+        width: 90%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .main-content{
+        width: 100%;
+        height: 50vh;
+    }
+    .logo{
+        width: 100%;
+        height: 50vh;
+    }
+    .image img{
+        width: 60%;
+    }
+    .nav-links{
+        font-size: 10px;
+    }
+    .main-content {
+        padding: 10%;
+        margin: 0;
+    }
+    .main-content p{
+        font-size: 10px;
+    }
+    .main-content h2{
+        font-size: 12px;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        bottom: 40%;
+    }
+    .main-content h1{
+        font-size: 14px;
+    }
+    .fld{
+        height: 10%;
+    }
+    .txt{
+        font-size: 10px;
+    }
+    button{
+        margin: 0 2%;
+        font-size: 10px;
+        padding: 2% 4%;
+    }
+    .option{
+        margin: 3% 0;
+    }
+    .btn-social{
+        top: 20%;
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        height: 20%;
+        /* border: 2px solid red; */
+    }
+    span{
+        margin: auto;
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        
+    }
+    span a{
+        font-size: 10px;
+    }
+    .company-name{
+        height: 10%;
+    }
+}
