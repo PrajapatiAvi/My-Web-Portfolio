@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", serif;
+}
+
+.bckimg{
+    background-image: url(beach.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.heading p{
+    margin-bottom: 20px;
+    color: whitesmoke;
+}
+
+.heading h2{
+    font-family: "Caveat", cursive;
+    font-weight: 100px;
+    font-size: 95px;
+    color: white;
+    text-align: center;
+}
+
+.lgin{
+    background-image: url(beach1.jpg);
+    background-size: cover;
+    height: 35vh;
+    width: 30vw;
+    padding: 40px;
+    /* border: 1px solid black; */
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px black;
+    /* background-color: rgba(255, 255, 255, 0.5);
+    background-blend-mode: soft-light; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+span{
+    color: red;
+}
+
+#username, #password{
+    margin: auto;
+    color: white;
+}
+
+.lgin h1, p{
+    color: white;
+}
+
+.lgin h1{
+    margin-bottom: 15px;
+    font-family: "Caveat", cursive;
+    font-size: 50px;
+}
+
+input{
+    width: 60%;
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.lgin p{
+    margin: 7px 0 7px 0;
+}
+
+button{
+    margin-top: 15px;
+    width: 25%;
+    background-color: transparent;
+    border: 1px solid rgb(235, 73, 73);
+    color: black;
+}
+
+button:hover{
+    background-color: rgb(235, 73, 73);
+    color: white;
+    transition: 1s;
+    border-radius: 10px;
+}
